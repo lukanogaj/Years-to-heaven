@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retirement calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Retirement calculator</h1>
+    <div class="container">
+      <label for="date" class="label-form">Date Of Birth</label>
+      <input
+        type="text"
+        class="form-input"
+        id="birthYear"
+        placeholder="DD/MM/YYYY"
+      />
+      <button id="btnAgeRetire" class="btn">
+        Calculate years to Retirement
+      </button>
+
+      <div class="days-to-retire">
+        <div class="date-value">
+          <label for="year" class="data-units">Year</label>
+          <h2 id="year">0</h2>
+        </div>
+
+        <p>:</p>
+        <div class="date-value">
+          <label for="day" class="data-units">Day</label>
+          <h2 id="day">0</h2>
+        </div>
+
+        <p>:</p>
+        <div class="date-value">
+          <label for="hour" class="data-units">Hour</label>
+          <h2 id="hour">0</h2>
+        </div>
+
+        <p>:</p>
+
+        <div class="date-value">
+          <label for="minute" class="data-units">Minute</label>
+          <h2 id="minute">0</h2>
+        </div>
+
+        <p>:</p>
+
+        <div class="date-value">
+          <label for="second" class="data-units">Second</label>
+          <h2 id="second">0</h2>
+        </div>
+
+        <p>:</p>
+
+        <div class="date-value">
+          <label for="milisecond" class="data-units">Milisecond</label>
+          <h2 id="milisecond">0</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
