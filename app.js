@@ -2,20 +2,31 @@
 
 Wpisujesz swoja date urodzenia (wliczajac miesiac i dzien) klikasz 'start countdown' i pokazuje Ci sie odliczanie do retirementu, ktore odlicza lata, dni, godziny, minuty, sekundy w formacie 10:234:17:54:22 */
 
+const retirement = 65;
+
 // Select the elements
+const btnBirthOfYear = document.querySelector('#btn-submit-dateOfBirth');
+const birthYear = document.querySelector('#dateOfBirth');
 const btnCalcAge = document.querySelector('#btnAgeRetire');
-const inputDate = document.querySelector('#birthYear');
+const inputDate = document.querySelector('#currentDate');
 
-// Function to calculate the retire age
-// const age = (age) => {
-//   return birthYear - currentYear.value;
-// }
+console.log(birthYear);
 
-// Add event listeners to the button
-btnCalcAge.addEventListener('click', function () {
-  let currentYear = inputDate.value;
-  console.log(currentYear);
+btnBirthOfYear.addEventListener('click', () => {
+  btnBirthOfYear.classList.toggle('btn-change-colour');
 });
+// Add event listeners to the button to submit date to the calculator
+// The funstion to calculate age (today' date minus date of birth)
+// birthYear.addEventListener('click', () => {
+//   birthYear.classList.toggle('btn-submit-dateOfBirth');
+// });
 
-let now = new Date().getTime();
-console.log(now);
+// btnCalcAge.addEventListener('click', function () {
+//   let currentDate = inputDate.value;
+//   return currentDate - console.log(currentDate);
+// });
+
+// console.log(currentYear);
+// Functions
+
+// console.log(countDownDate);
