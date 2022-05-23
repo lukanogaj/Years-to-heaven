@@ -6,11 +6,6 @@ const retirement = 65;
 
 // Select the elements
 const btnBirthOfYear = document.querySelector('#btn-submit-dateOfBirth');
-const birthYear = document.querySelector('#dateOfBirth');
-const btnCalcAge = document.querySelector('#btnAgeRetire');
-const inputDate = document.querySelector('#currentDate');
-
-console.log(birthYear);
 
 btnBirthOfYear.addEventListener('click', () => {
   btnBirthOfYear.classList.toggle('btn-change-colour');
