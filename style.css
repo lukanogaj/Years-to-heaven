@@ -116,3 +116,8 @@ input {
   border: 0.5rem;
   background-color: #2ab758;
 }
+
+/* Classes for changing the colours for the buttons */
+.btn-change-colour {
+  background-color: red;
+}

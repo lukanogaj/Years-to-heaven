@@ -6,22 +6,28 @@ const retirement = 65;
 
 // Select the elements
 const btnBirthOfYear = document.querySelector('#btn-submit-dateOfBirth');
+const btnTodayDate = document.querySelector('#btn-submit-todayDate');
 
+//  Add functionality to the buttons
+// Todays date button
+btnTodayDate.addEventListener('click', () => {
+  btnTodayDate.classList.toggle('btn-change-colour');
+  if (btnTodayDate.innerText === "Confirm today's date") {
+    btnTodayDate.innerText = 'Date confirmed';
+  } else {
+    btnTodayDate.innerText = "Confirm today's date";
+  }
+});
+
+// Birth of year button change the class
 btnBirthOfYear.addEventListener('click', () => {
   btnBirthOfYear.classList.toggle('btn-change-colour');
+  if (btnBirthOfYear.innerText === 'Calculate years to retire') {
+    btnBirthOfYear.innerText = 'Calculating';
+  } else {
+    btnBirthOfYear.innerText = 'Calculate years to retire';
+  }
 });
-// Add event listeners to the button to submit date to the calculator
-// The funstion to calculate age (today' date minus date of birth)
-// birthYear.addEventListener('click', () => {
-//   birthYear.classList.toggle('btn-submit-dateOfBirth');
-// });
 
-// btnCalcAge.addEventListener('click', function () {
-//   let currentDate = inputDate.value;
-//   return currentDate - console.log(currentDate);
-// });
-
-// console.log(currentYear);
-// Functions
-
-// console.log(countDownDate);
+// Checking and the debbuing
+console.log(btnBirthOfYear, btnTodayDate);
