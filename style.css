@@ -121,3 +121,10 @@ input {
 .btn-change-colour {
   background-color: red;
 }
+
+.retirement-date {
+  height: 32px;
+  margin-left: 2rem;
+  border-radius: 0.3rem;
+  letter-spacing: 0.2rem;
+}

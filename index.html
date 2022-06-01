@@ -11,69 +11,46 @@
     <div class="container">
       <div class="heading">
         <h1>Time to Retirement</h1>
-        <div class="current-date">
-          <label for="date" class="label-form">Today's Date</label>
-          <input
-            type="date"
-            id="todayDate"
-            name="trip-start"
-            value="2018-07-22"
-            min="1900-01-01"
-            max="2022-12-31"
-          />
+        <div class="ageCalc">
+          <label for="date" class="label-form">Date of birth</label>
+          <input type="date" id="birthDate" value="2014-02-09" />
           <button
+            onclick="dateOfRetire()"
             class="btn"
             class="btn-change-colour"
-            id="btn-submit-todayDate"
+            id="btn-submit-dateOfBirth"
           >
-            Confirm today's date
+            Submit date of birth
           </button>
+          <!-- <input type="date" class="retirement-date" value="" /> -->
         </div>
       </div>
       <div class="hero">
         <div class="days-to-retire">
           <div class="date-value">
             <h2 id="year">0</h2>
-            <label for="year" class="data-units">Year</label>
+            <h2 class="data-units">Year</h2>
           </div>
 
           <div class="date-value">
             <h2 id="day">0</h2>
-            <label for="day" class="data-units">Month</label>
+            <h2 class="data-units">Month</h2>
           </div>
 
           <div class="date-value">
             <h2 id="hour">0</h2>
-            <label for="hour" class="data-units">Day</label>
+            <h2 class="data-units">Day</h2>
           </div>
 
           <div class="date-value">
             <h2 id="minute">0</h2>
-            <label for="minute" class="data-units">Hour</label>
+            <h2 class="data-units">Hour</h2>
           </div>
 
           <div class="date-value">
             <h2 id="second">0</h2>
-            <label for="second" class="data-units">Second</label>
+            <h2 class="data-units">Second</h2>
           </div>
-        </div>
-        <div class="ageCalc">
-          <label for="date" class="label-form">Date of birth</label>
-          <input
-            type="date"
-            id="birthDate"
-            name="trip-start"
-            value="2018-07-22"
-            min="1900-01-01"
-            max="2022-12-31"
-          />
-          <button
-            class="btn"
-            class="btn-change-colour"
-            id="btn-submit-dateOfBirth"
-          >
-            Calculate years to retire
-          </button>
         </div>
       </div>
     </div>
